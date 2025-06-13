@@ -166,7 +166,7 @@ void game::draw() {
 	if (this->start == false) {
 		std::string r = "-USE A S D & W TO MOVE-";
 		std::string begin = "-PRESS SPACE TO BEGIN-";
-		std::cout << "\033[" << std::to_string(int(size / 2 + 1)) << ";0H" << std::string(padding, ' ') << char(186) << std::string((size - r.length()) / 2 + 1, ' ') << r;
+		std::cout << "\033[" << std::to_string(int(size / 2)) << ";0H" << std::string(padding, ' ') << char(186) << std::string((size - r.length()) / 2, ' ') << r;
 		std::cout << "\033[" << std::to_string(int(size / 2 + 1)) << ";0H" << std::string(padding, ' ') << char(186) << std::string((size - begin.length()) / 2, ' ') << begin << "\033[u";
 	
 	} 

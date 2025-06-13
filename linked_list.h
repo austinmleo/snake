@@ -8,6 +8,7 @@ struct linked_list
 	int length;
 
 	linked_list();
+	~linked_list();
 	void insert(int value);
 	void remove();
 	bool contains(int value);

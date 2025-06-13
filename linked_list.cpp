@@ -9,6 +9,12 @@ linked_list::linked_list()
 	length = 0;
 }
 
+linked_list::~linked_list() {
+	while (head != nullptr) {
+		remove();
+	}
+}
+
 //Insert at head
 void linked_list::insert(int value) {
 	node* temp = new node(value);
