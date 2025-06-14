@@ -22,7 +22,7 @@ public:
 	game(int size = 25, int score = 4);
 
 	bool outOfBounds(int loc);
-	void fillBoard(std::vector<std::string>& board, int value, char c);
+	void fillBoard(std::string& board);
 	void update();
 	void draw();
 	int getSize() { return size; };
